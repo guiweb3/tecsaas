@@ -1,107 +1,104 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>TecSaaS — Tecnologia & Inovação</title>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>TecSaaS — Notícias Cripto</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html,body{overflow-x:hidden}
-img{max-width:100%;height:auto}
-:root{--accent:#2563eb;--ink:#111;--paper:#fff;--muted:#666;--border:#e5e5e5}
-body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink)}
-a{color:inherit;text-decoration:none}
-.header{max-width:1200px;margin:0 auto;padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
-.logo{font-family:'Instrument Serif',serif;font-size:1.8rem}
-.logo span{color:var(--accent)}
-.nav{display:flex;gap:1.5rem;font-size:.85rem;color:var(--muted)}
-.nav a:hover{color:var(--ink)}
-.search-box{display:flex;gap:8px;align-items:center}
-.search-box input{border:1px solid var(--border);border-radius:20px;padding:6px 14px;font-size:.8rem;font-family:inherit;outline:none;width:180px}
-.hero{max-width:1200px;margin:2rem auto;padding:0 2rem;display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center}
-.hero-text h1{font-family:'Instrument Serif',serif;font-size:2.8rem;line-height:1.15;margin-bottom:1rem}
-.hero-text p{color:var(--muted);font-size:1rem;line-height:1.7;margin-bottom:1.5rem}
-.hero-tag{display:inline-block;font-size:.7rem;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:20px;padding:3px 12px;margin-bottom:1rem}
-.hero-img{border-radius:12px;width:100%;height:350px;object-fit:cover}
-.section-label{max-width:1200px;margin:3rem auto 1rem;padding:0 2rem;font-size:.75rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--border);padding-top:1.5rem}
-.grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.card{border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:.2s}
-.card:hover{box-shadow:0 4px 20px rgba(0,0,0,.08)}
-.card-img{width:100%;height:180px;object-fit:cover;background:#f0f0f0}
-.card-body{padding:1rem 1.2rem}
-.card-tag{font-size:.65rem;font-weight:600;color:var(--accent);margin-bottom:.5rem;display:block}
-.card-body h3{font-family:'Instrument Serif',serif;font-size:1.15rem;line-height:1.3;margin-bottom:.5rem}
-.card-body p{font-size:.8rem;color:var(--muted);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.card-meta{font-size:.7rem;color:var(--muted);margin-top:.8rem}
-.footer{max-width:1200px;margin:4rem auto 0;padding:2rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:.75rem;color:var(--muted)}
-.article-view{max-width:720px;margin:2rem auto;padding:0 2rem;display:none}
-.article-view.active{display:block}
-.article-view .back{font-size:.85rem;color:var(--accent);cursor:pointer;margin-bottom:1.5rem;display:inline-block}
-.article-view h1{font-family:'Instrument Serif',serif;font-size:2.2rem;line-height:1.2;margin-bottom:1rem}
-.article-view .meta{font-size:.8rem;color:var(--muted);margin-bottom:1.5rem}
-.article-view .cover{width:100%;border-radius:10px;margin-bottom:1.5rem;max-height:400px;object-fit:cover}
-.article-view .body{font-size:1rem;line-height:1.8;color:#333}
-.article-view .tags{margin-top:2rem;display:flex;gap:6px;flex-wrap:wrap}
-.article-view .tags span{font-size:.7rem;background:#f5f5f5;padding:4px 10px;border-radius:12px}
-.home-view{}
-.home-view.hidden{display:none}
+*{margin:0;padding:0;box-sizing:border-box}html,body{overflow-x:hidden}img{max-width:100%;height:auto}
+:root{--a:#f97316;--ink:#1a1a1a;--p:#fff;--m:#777;--b:#eee;--bg2:#f7f7f7}
+body{font-family:'Inter',sans-serif;background:var(--p);color:var(--ink)}a{color:inherit;text-decoration:none}
+.topbar{background:var(--ink);color:#fff;padding:6px 0;font-size:.65rem;text-align:center}
+.header{max-width:1200px;margin:0 auto;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.6rem;font-weight:800}.logo span{color:var(--a)}
+.nav{display:flex;gap:1.2rem;font-size:.78rem;font-weight:600}.nav a:hover{color:var(--a)}
+.si input{border:1px solid var(--b);border-radius:20px;padding:6px 14px;font-size:.78rem;font-family:inherit;outline:none;width:160px}
+.hl{background:var(--a);color:#fff;padding:3px 0;font-size:.7rem;overflow:hidden;white-space:nowrap}
+.hl span{display:inline-block;animation:sc 25s linear infinite}.hl b{margin-right:2rem}
+@keyframes sc{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+.hero{max-width:1200px;margin:1.5rem auto;padding:0 2rem;display:grid;grid-template-columns:1.6fr 1fr;gap:1.5rem}
+.hero-main{position:relative;border-radius:8px;overflow:hidden;min-height:360px;cursor:pointer}
+.hero-main img{width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0}
+.hero-main .ov{position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff}
+.hero-main .ov h2{font-size:1.5rem;font-weight:800;line-height:1.25}
+.hero-main .ov p{font-size:.8rem;opacity:.85;margin-top:.5rem}
+.hero-side{display:flex;flex-direction:column;gap:.6rem}
+.hero-side a{display:flex;gap:.8rem;padding:.6rem;border-bottom:1px solid var(--b);align-items:start}
+.hero-side a img{width:85px;height:60px;object-fit:cover;border-radius:4px;flex-shrink:0}
+.hero-side a .tg{font-size:.6rem;font-weight:700;color:var(--a)}
+.hero-side a h3{font-size:.8rem;font-weight:700;line-height:1.3;margin-top:2px}
+.stitle{max-width:1200px;margin:2rem auto .5rem;padding:0 2rem;font-size:.9rem;font-weight:800;display:flex;align-items:center;gap:.5rem}
+.stitle::after{content:'';flex:1;height:2px;background:var(--b)}
+.stitle .arrow{font-size:1.2rem;cursor:pointer}
+.ml-scroll{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;gap:1rem;overflow-x:auto;padding-bottom:.5rem}
+.ml-card{min-width:180px;flex-shrink:0;text-align:center}
+.ml-card img{width:180px;height:120px;object-fit:cover;border-radius:6px}
+.ml-card h4{font-size:.78rem;font-weight:700;margin-top:.5rem;line-height:1.3}
+.content{max-width:1200px;margin:1.5rem auto;padding:0 2rem;display:grid;grid-template-columns:2fr 1fr;gap:2rem}
+.feed .item{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--b);align-items:start}
+.feed .item img{width:140px;height:95px;object-fit:cover;border-radius:6px;flex-shrink:0}
+.feed .item .tg{font-size:.62rem;font-weight:700;color:var(--a);text-transform:uppercase}
+.feed .item h3{font-size:.92rem;font-weight:700;line-height:1.3;margin:4px 0}
+.feed .item p{font-size:.78rem;color:var(--m);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.feed .item .mt{font-size:.68rem;color:var(--m);margin-top:4px}
+.sidebar .box{background:var(--bg2);border-radius:8px;padding:1rem;margin-bottom:1rem}
+.sidebar .box h3{font-size:.82rem;font-weight:800;margin-bottom:.8rem;padding-bottom:.5rem;border-bottom:2px solid var(--a)}
+.sidebar .box a{display:block;padding:.5rem 0;border-bottom:1px solid var(--b);font-size:.8rem;font-weight:500;line-height:1.35}
+.sidebar .box a:last-child{border:none}
+.footer{background:var(--ink);color:#fff;padding:3rem 2rem;margin-top:3rem}
+.fi{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:2rem;font-size:.75rem}
+.fi h4{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:.6rem;color:var(--a)}
+.fi a{display:block;color:#aaa;margin-bottom:.3rem}
+.fb{max-width:1200px;margin:0 auto;padding-top:2rem;border-top:1px solid #333;font-size:.7rem;color:#666;text-align:center;margin-top:2rem;display:flex;justify-content:space-between}
+.av{max-width:700px;margin:2rem auto;padding:0 2rem;display:none}.av.active{display:block}
+.av .back{display:inline-block;font-size:.85rem;color:var(--a);font-weight:600;cursor:pointer;margin-bottom:1.5rem}
+.av h1{font-size:2rem;font-weight:800;line-height:1.2;margin-bottom:.5rem}
+.av .meta{font-size:.82rem;color:var(--m);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--b)}
+.av .cover{width:100%;border-radius:8px;margin-bottom:1.5rem}
+.av .body{font-size:1rem;line-height:1.85;color:#333}.av .body p{margin-bottom:1rem}
+.av .tags{margin-top:2rem;display:flex;gap:6px;flex-wrap:wrap}.av .tags span{font-size:.7rem;background:var(--bg2);padding:4px 10px;border-radius:4px;font-weight:600}
+.hv{}.hv.hidden{display:none}
 @media(max-width:768px){
-.header{padding:1rem;flex-wrap:wrap;gap:.5rem}
-.nav{display:none}
-.search-box input{width:120px}
-.hero{grid-template-columns:1fr;padding:0 1rem}
-.hero-text h1{font-size:1.8rem}
-.hero-img{height:220px}
-.grid{grid-template-columns:1fr!important;padding:0 1rem}
-.footer{flex-direction:column;gap:1rem;padding:2rem 1rem}
-.article-view{padding:0 1rem}
-.article-view h1{font-size:1.5rem}
+.header{padding:.8rem 1rem;flex-wrap:wrap;gap:.5rem}.logo{font-size:1.2rem}.nav{display:none}.si input{width:100%}
+.hero{grid-template-columns:1fr;padding:0 1rem}.hero-main{min-height:250px}.hero-main .ov h2{font-size:1.2rem}.hero-side{display:none}
+.ml-scroll{padding:0 1rem}.content{grid-template-columns:1fr;padding:0 1rem}.sidebar{display:none}
+.feed .item img{width:100px;height:70px}.feed .item h3{font-size:.85rem}
+.fi{grid-template-columns:1fr 1fr}.fb{flex-direction:column;gap:.5rem}
+.av{padding:0 1rem}.av h1{font-size:1.5rem}.stitle{padding:0 1rem}
 }
-</style>
-</head>
-<body>
-<div class="home-view" id="homeView">
-<div class="header">
-<div class="logo">TecSaaS<span></span></div>
-<div class="nav" id="navFilters"></div>
-<div class="search-box"><input type="text" placeholder="Buscar..." id="searchInput" oninput="handleSearch()"></div>
+</style></head><body>
+<div class="hv" id="hv">
+<div class="topbar">📊 Mercado em tempo real — Bitcoin, Ethereum, DeFi e muito mais</div>
+<div class="header"><div class="logo">TecSaaS<span></span></div><div class="nav" id="nf"></div><div class="si"><input type="text" placeholder="Buscar..." id="si" oninput="hS()"></div></div>
+<div class="hl"><span id="ticker"></span></div>
+<div class="hero" id="hs"></div>
+<div class="stitle">🔥 Mais Lidas <span class="arrow">→</span></div>
+<div class="ml-scroll" id="ml"></div>
+<div class="content"><div class="feed" id="feed"></div><div class="sidebar"><div class="box"><h3>⚡ Especiais</h3><div id="sb"></div></div></div></div>
+<div class="footer"><div class="fi"><div><h4>Tudo Sobre</h4><a href="#">Bitcoin</a><a href="#">Ethereum</a><a href="#">Blockchain</a><a href="#">DeFi</a></div><div><h4>Destaque</h4><a href="#">Últimas</a><a href="#">Análise Técnica</a><a href="#">Regulação</a></div><div><h4>Guia</h4><a href="#">Investir Agora</a><a href="#">Exchanges</a><a href="#">Carteiras</a></div><div><h4>Sobre Nós</h4><a href="#">Quem somos</a><a href="#">Contato</a><a href="#">Termos</a></div><div><h4>TecSaaS</h4><p style="font-size:.72rem;color:#888">Portal de notícias sobre tecnologia e criptomoedas.</p></div></div><div class="fb"><span>© 2026 TecSaaS. Todos os direitos reservados.</span><span>Política de Privacidade</span></div></div>
 </div>
-<div class="hero" id="heroSection"></div>
-<div class="section-label">Últimas Notícias</div>
-<div class="grid" id="newsGrid"></div>
-<div class="footer"><span>© 2026 TecSaaS</span><span>Tecnologia & Inovação</span></div>
-</div>
-<div class="article-view" id="articleView">
-<span class="back" onclick="goHome()">← Voltar</span>
-<div id="articleContent"></div>
-</div>
-<script>
-const SUPA="https://vpvsrjkotstvjywhuacr.supabase.co",KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZwdnNyamtvdHN0dmp5d2h1YWNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcyMzE2MzQsImV4cCI6MjA2MjgwNzYzNH0.BDh59N4okIoJB0aOheqp07lYLgd0A4y3Ho1H26xl2jw";
-let allNews=[],searchQuery='',currentFilter='';
-function parseTags(h){if(!h)return[];if(Array.isArray(h))return h;if(typeof h==='string')return h.split('#').filter(Boolean).map(t=>t.trim());return[]}
-async function init(){
-const r=await fetch(SUPA+'/rest/v1/noticiasgeral?status=eq.publicado&order=created_at.desc&limit=30',{headers:{'apikey':KEY,'Authorization':'Bearer '+KEY}});
-allNews=await r.json();renderHome();handleHash()}
-function renderHome(){
-let news=getFiltered();
-if(news.length>0){const n=news[0];const tags=parseTags(n.hashtags);
-document.getElementById('heroSection').innerHTML=`
-<div class="hero-text"><span class="hero-tag">${tags[0]||'Tech'}</span><h1>${n.titulo_noticia||''}</h1><p>${(n.resumo_noticia||'').slice(0,200)}...</p><a href="#/article/${n.slug}" style="color:var(--accent);font-weight:600;font-size:.9rem">Ler mais →</a></div>
-<img class="hero-img" src="${n.capa_noticia||''}" onerror="this.style.background='#f0f0f0'" alt="">`;}
-const grid=document.getElementById('newsGrid');
-grid.innerHTML=news.slice(1).map(n=>{const tags=parseTags(n.hashtags);return`
-<a href="#/article/${n.slug}" class="card"><img class="card-img" src="${n.capa_noticia||''}" onerror="this.style.background='#f0f0f0'" alt=""><div class="card-body"><span class="card-tag">${tags[0]||'Tech'}</span><h3>${n.titulo_noticia||''}</h3><p>${(n.resumo_noticia||'').slice(0,120)}</p><div class="card-meta">${n.created_at?new Date(n.created_at).toLocaleDateString('pt-BR',{day:'numeric',month:'short',year:'numeric'}):''}</div></div></a>`}).join('');
-const cats=[...new Set(allNews.flatMap(n=>parseTags(n.hashtags).slice(0,2)))].filter(c=>c.length<15).slice(0,5);
-document.getElementById('navFilters').innerHTML=cats.map(c=>`<a href="#" onclick="event.preventDefault();setFilter('${c}')">${c}</a>`).join('')}
-function setFilter(f){currentFilter=currentFilter===f?'':f;renderHome()}
-function handleSearch(){searchQuery=document.getElementById('searchInput').value.toLowerCase();renderHome()}
-function getFiltered(){let f=allNews;if(currentFilter)f=f.filter(n=>parseTags(n.hashtags).includes(currentFilter));if(searchQuery)f=f.filter(n=>(n.titulo_noticia||'').toLowerCase().includes(searchQuery)||(n.resumo_noticia||'').toLowerCase().includes(searchQuery));return f}
-function showArticle(slug){const n=allNews.find(a=>a.slug===slug);if(!n)return;const tags=parseTags(n.hashtags);
-document.getElementById('articleContent').innerHTML=`<h1>${n.titulo_noticia||''}</h1><div class="meta">${n.autor||'Press Release'} · ${n.created_at?new Date(n.created_at).toLocaleDateString('pt-BR',{day:'numeric',month:'long',year:'numeric'}):''}</div>${n.capa_noticia?`<img class="cover" src="${n.capa_noticia}" alt="">`:''}
+<div class="av" id="av"><span class="back" onclick="gH()">← Voltar</span><div id="ac"></div></div>
+<script>const SUPA="https://vpvsrjkotstvjywhuacr.supabase.co",KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZwdnNyamtvdHN0dmp5d2h1YWNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcyMzE2MzQsImV4cCI6MjA2MjgwNzYzNH0.BDh59N4okIoJB0aOheqp07lYLgd0A4y3Ho1H26xl2jw";
+let allNews=[],sq='',cf='';
+function pT(h){if(!h)return[];if(Array.isArray(h))return h;if(typeof h==='string')return h.split('#').filter(Boolean).map(t=>t.trim());return[]}
+function fmtD(d){return d?new Date(d).toLocaleDateString('pt-BR',{day:'numeric',month:'short',year:'numeric'}):'';}
+function fmtDL(d){return d?new Date(d).toLocaleDateString('pt-BR',{day:'numeric',month:'long',year:'numeric'}):'';}
+async function init(){const r=await fetch(SUPA+'/rest/v1/noticiasgeral?status=eq.publicado&order=created_at.desc&limit=40',{headers:{'apikey':KEY,'Authorization':'Bearer '+KEY}});allNews=await r.json();render();hH()}
+function gF(){let f=allNews;if(cf)f=f.filter(n=>pT(n.hashtags).includes(cf));if(sq)f=f.filter(n=>(n.titulo_noticia||'').toLowerCase().includes(sq)||(n.resumo_noticia||'').toLowerCase().includes(sq));return f}
+function sF(f){cf=cf===f?'':f;render()}
+function hS(){sq=document.getElementById('si').value.toLowerCase();render()}
+function sA(slug){const n=allNews.find(a=>a.slug===slug);if(!n)return;const tags=pT(n.hashtags);
+document.getElementById('ac').innerHTML=`<h1>${n.titulo_noticia||''}</h1><div class="meta">${n.autor||'Redação'} · ${fmtDL(n.created_at)}</div>${n.capa_noticia?`<img class="cover" src="${n.capa_noticia}" alt="">`:''}
 <div class="body">${(n.resumo_noticia||'').split('\n').map(p=>'<p>'+p+'</p>').join('')}</div><div class="tags">${tags.map(t=>'<span>#'+t+'</span>').join('')}</div>`;
-document.getElementById('homeView').classList.add('hidden');document.getElementById('articleView').classList.add('active');window.scrollTo(0,0)}
-function goHome(){document.getElementById('homeView').classList.remove('hidden');document.getElementById('articleView').classList.remove('active')}
-function handleHash(){const h=location.hash;if(h.startsWith('#/article/'))showArticle(h.replace('#/article/',''));else goHome()}
-window.addEventListener('hashchange',handleHash);init();
+document.getElementById('hv').classList.add('hidden');document.getElementById('av').classList.add('active');window.scrollTo(0,0)}
+function gH(){document.getElementById('hv').classList.remove('hidden');document.getElementById('av').classList.remove('active')}
+function hH(){const h=location.hash;if(h.startsWith('#/article/'))sA(h.replace('#/article/',''));else gH()}
+window.addEventListener('hashchange',hH);init();
+function render(){let n=gF();
+document.getElementById('ticker').innerHTML=n.slice(0,6).map(x=>'<b>⚡ '+x.titulo_noticia+'</b>').join('');
+if(n.length>0){const h=n[0];const t=pT(h.hashtags);const sd=n.slice(1,6);
+document.getElementById('hs').innerHTML=`<a href="#/article/${h.slug}" class="hero-main"><img src="${h.capa_noticia||''}" onerror="this.style.background='#ddd'" alt=""><div class="ov"><h2>${h.titulo_noticia||''}</h2><p>${(h.resumo_noticia||'').slice(0,150)}...</p></div></a>
+<div class="hero-side">${sd.map(s=>{const st=pT(s.hashtags);return`<a href="#/article/${s.slug}"><img src="${s.capa_noticia||''}" onerror="this.style.background='#eee'" alt=""><div><div class="tg">${st[0]||'Tech'}</div><h3>${s.titulo_noticia||''}</h3></div></a>`}).join('')}</div>`;}
+document.getElementById('ml').innerHTML=n.slice(0,6).map(x=>`<a href="#/article/${x.slug}" class="ml-card"><img src="${x.capa_noticia||''}" onerror="this.style.background='#eee'" alt=""><h4>${x.titulo_noticia||''}</h4></a>`).join('');
+document.getElementById('feed').innerHTML=n.slice(6).map(x=>{const t=pT(x.hashtags);return`<a href="#/article/${x.slug}" class="item"><img src="${x.capa_noticia||''}" onerror="this.style.background='#eee'" alt=""><div><div class="tg">${t[0]||'Notícia'}</div><h3>${x.titulo_noticia||''}</h3><p>${(x.resumo_noticia||'').slice(0,120)}</p><div class="mt">${x.autor||'Redação'} · ${fmtD(x.created_at)}</div></div></a>`}).join('');
+document.getElementById('sb').innerHTML=n.slice(0,8).map(x=>`<a href="#/article/${x.slug}">${x.titulo_noticia||''}</a>`).join('');
+const cats=[...new Set(n.flatMap(x=>pT(x.hashtags).slice(0,2)))].filter(c=>c.length<15).slice(0,5);
+document.getElementById('nf').innerHTML=cats.map(c=>`<a href="#" onclick="event.preventDefault();sF('${c}')">${c}</a>`).join('')}
 </script></body></html>
